@@ -8,10 +8,11 @@ const ClimateProvider = (props) => {
     const [temp, setTemp] = useState(50);
     const [humidity, setHumidity] = useState(40);
     const [pageTemp, setPageTemp] = useState(temp);
+    const [pageHumidity, setPageHumidity] = useState(temp);
 
 
     return(
-        <climateContext.Provider value={{temp, setTemp, humidity, setHumidity, pageTemp, setPageTemp}}>
+        <climateContext.Provider value={{temp, setTemp, humidity, setHumidity, pageTemp, setPageTemp, pageHumidity, setPageHumidity}}>
             {props.children}
         </climateContext.Provider>
     )

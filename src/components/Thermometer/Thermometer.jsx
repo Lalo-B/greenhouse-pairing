@@ -6,19 +6,6 @@ import "./Thermometer.css";
 function Thermometer() {
 	const { temp, setTemp } = useContext(climateContext);
 
-	// useEffect(() => {
-	// 	const tempChange = setTimeout(() => {
-	// 			if (pageTemp > temp) {
-	// 				setTemp(temp + 1);
-	// 			} else if (pageTemp < temp) {
-	// 				setTemp(temp - 1);
-	// 			} else {
-  //         return clearTimeout(tempChange);
-  //       }
-	// 	}, 1000);
-	// }, [pageTemp, setTemp, temp]);
-
-
 	return (
 		<section>
 			<h2>Thermometer</h2>
