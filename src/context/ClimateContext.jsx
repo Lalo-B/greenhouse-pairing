@@ -2,7 +2,7 @@
 // Humidity has a default value of 40%
 import { createContext, useState } from "react";
 
-const climateContext = createContext();
+export const climateContext = createContext();
 
 const ClimateProvider = (props) => {
     const [temp, setTemp] = useState(50);
